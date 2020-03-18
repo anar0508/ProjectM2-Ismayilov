@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bank Technology</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://image.flaticon.com/icons/svg/755/755195.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/images/logo.png" alt="Logo" />
+      <nav class="menu">
+        <a class="menu-points" href="#"> Home </a>
+        <a class="menu-points" href="#"> Credit calculator </a>
+        <a class="menu-points" href="#"> News </a>
+        <a class="menu-points" href="#"> About BT </a>
+      </nav>
+    </header>
+    <main>
+      <div class="calculator">
+        <div class="interactive">
+          <div class="required-info">
+            <p>Начальная сумма вклада ($)</p>
+            <p>Сумма ежемесячного пополнения ($)</p>
+            <p>Годовая процентная ставка (%)</p>
+            <p>Срок вклада (дней)</p>
+            <label for="periods"> <p>Периодичность:</p></label>
+          </div>
+          <div class="user-input">
+            <input id="sum" type="text" />
+            <input id="add" type="text" />
+            <input id="interest" type="text" />
+            <input id="term" type="text" />
+            <select id="periods">
+                <option value="1">Ежемесячно</option>
+                <option value="2">Ежеквартально</option>
+                <option value="3">Ежегодно</option>
+            </select>
+          </div>
+
+        </div>
+        <button id="but">Рассчитать</button>
+        <p id="false-result">Пожалуйста, проверьте введённые параметры</p>
+        <div id="result">
+          <table id="myTable">
+            <tr>
+              <th>Месяц</th>
+              <th>Начальная сумма</th>
+              <th>Пополнение по процентам</th>
+              <th>Дополнительные вложения</th>
+              <th>Конечная сумма</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2019-2020, All rights reserved. Property of BT</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

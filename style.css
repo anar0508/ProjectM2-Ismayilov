@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: black;
+  }
+
+body{
+    background-color: #f1f1b0;
+}  
+header{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    width: 100%;
+    min-width: 680px;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 10px ;
+    background-color: white;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 50px;
+    width: 6%;
+    max-width: 190px;
+    min-width: 50px;
+}
+
+.menu{
+    margin-left: 50px;
+    width: 90%;
+    min-width: 450px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.menu-points{
+    font-weight: bold;
+    display: inline-block;
+    color: #c3f584;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #c3f584;
+    text-decoration: none;  
+
+}
+
+  main {
+    margin-bottom: 100px;
+    margin-top: 130px;
+    background-color: #f1f1b0;
+
+}
+.calculator {
+    width: 90%;
+    margin: 0 auto; 
+}
+.interactive{
+    display: flex;
+    flex-direction: row;
+    width: 60%; 
+    justify-content: space-around;
+    background-color: #f1f1b0;
+}
+
+.required-info{
+    width: 50%;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+p{
+    color: #f76a8c;
+    width: 100%;
+    font-size: large;
+}
+
+.user-input{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    width: 40%;
+    margin: 20px;
+    background-color: white;
+}
+
+select{
+    display: block;
+    padding: 10px;
+    width: 40%;
+    margin: 20px;
+    background-color: white;
+}
+
+button{
+    background-color: #fff3af;   
+    width: 40%;
+    display: block; 
+    margin: 20px;
+    padding: 10px;
+    border-color: #c3f584;
+}
+
+#result{
+    display: none;
+    width: 60%;
+    margin: 0 auto; 
+
+}
+#myTable{
+    border-collapse: collapse;
+}
+
+th {
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+td{
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+#false-result{
+    display: none;
+}
+
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background-color: white;
+}
