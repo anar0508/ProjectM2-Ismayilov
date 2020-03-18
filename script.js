@@ -10,6 +10,8 @@ function showResult() {
     let monthInterest = interest / 100 / 12;
     let monthes = Math.floor(term / 30);
     let table = document.getElementById("myTable");
+    clearTable(table);
+    
 
     if (check(sum, add, interest, term) === false) {
         document.getElementById("false-result").style.display = "block";
@@ -28,7 +30,7 @@ function showResult() {
                     cell3.innerHTML = Math.round((totalSum * (1 + monthInterest) - totalSum) * 100) / 100;
                     totalSum = Math.round(totalSum * (1 + monthInterest) * 100) / 100;
                     cell1.innerHTML = i;
-                    cell4.innerHTML = add;
+                    cell4.innerHTML = 0;
                     cell5.innerHTML = totalSum;
                 } else if (i % 4 == 0) {
                     let row = table.insertRow(-1);
@@ -72,7 +74,7 @@ function showResult() {
                     cell3.innerHTML = Math.round((totalSum * (1 + monthInterest) - totalSum) * 100) / 100;
                     totalSum = Math.round(totalSum * (1 + monthInterest) * 100) / 100;
                     cell1.innerHTML = i;
-                    cell4.innerHTML = add;
+                    cell4.innerHTML = 0;
                     cell5.innerHTML = totalSum;
                 } else if (i % 12 == 0) {
                     let row = table.insertRow(-1);
@@ -116,7 +118,7 @@ function showResult() {
                     cell3.innerHTML = Math.round((totalSum * (1 + monthInterest) - totalSum) * 100) / 100;
                     totalSum = Math.round(totalSum * (1 + monthInterest) * 100) / 100;
                     cell1.innerHTML = i;
-                    cell4.innerHTML = add;
+                    cell4.innerHTML = 0;
                     cell5.innerHTML = totalSum;
                 } else {
                     let row = table.insertRow(-1);
@@ -145,12 +147,21 @@ function check(sum, add, interest, term) {
         isNaN(sum) ||
         add < 0 ||
         isNaN(add) ||
-        interest < 0 ||
+        interest <= 0 ||
         interest > 100 ||
         isNaN(interest) ||
         (term < 0 && term % 1 != 0) ||
         isNaN(term) == true) {
         return false;
+    }
+}
+
+function clearTable(in_table) {
+    //Честно украл у Джавида, который честно украл из гугла :)
+    let rows = in_table.rows;
+    let i = rows.length;
+    while (--i) {
+        in_table.deleteRow(i);
     }
 }
 
