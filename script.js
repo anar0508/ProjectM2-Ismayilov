@@ -8,9 +8,9 @@ function collectDate() {
         addPeriod: +document.getElementById("periods").value,
         interest: + document.getElementById("interest").value,
         term: + document.getElementById("term").value,
-        totalSum: this.sum,
-        monthInterest: this.interest / 100 / 12,
-        monthes : Math.floor(this.term / 30)
+        totalSum: +document.getElementById("sum").value,
+        monthInterest: + document.getElementById("interest").value / 100 / 12,
+        monthes : Math.floor(+ document.getElementById("term").value / 30)
     }
 }
 
