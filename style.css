@@ -80,6 +80,12 @@ p{
     font-size: large;
 }
 
+label{
+    color: #f76a8c;
+    width: 100%;
+    font-size: large;
+}
+
 .user-input{
     width: 40%;
     min-width: 200px;
