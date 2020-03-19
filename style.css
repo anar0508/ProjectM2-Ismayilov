@@ -61,12 +61,14 @@ header{
     display: flex;
     flex-direction: row;
     width: 60%; 
+    min-width: 500px;
     justify-content: space-around;
     background-color: #f1f1b0;
 }
 
 .required-info{
     width: 50%;
+    min-width: 300px;
     align-content: center;
     display: flex;
     flex-direction: column;
@@ -80,6 +82,7 @@ p{
 
 .user-input{
     width: 40%;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -132,6 +135,9 @@ td{
 
 #false-result{
     display: none;
+    width: 50%;
+    min-width: 300px;   
+    margin-left: 100px;
 }
 
 
