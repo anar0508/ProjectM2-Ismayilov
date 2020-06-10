@@ -1,6 +1,5 @@
 document.getElementById("but").addEventListener("click", showResult);
 
-
 function collectDate() {
     return {
         sum: +document.getElementById("sum").value,
@@ -43,12 +42,6 @@ function showError() {
     document.getElementById("false-result").style.display = "block";
     document.getElementById("result").style.display = "none";
     console.error("Истина где-то рядом!");
-}
-
-function showTable(){
-    document.getElementById("result").style.display = "block";
-    document.getElementById("false-result").style.display = "none";
-    console.clear();
 }
 
 function calculate(data) {
@@ -166,6 +159,12 @@ function drawYearlyTable(data) {
     }
 }
 
+function showTable(){
+    document.getElementById("result").style.display = "block";
+    document.getElementById("false-result").style.display = "none";
+    console.clear();
+}
+
 function clearTable(table) {
     //Честно украл у Джавида, который честно украл из гугла :)
     let rows = table.rows;
@@ -180,9 +179,3 @@ function showResult() {
     clearTable(document.getElementById("myTable"));
     calculate(data);
 }
-
-
-
-
-
-
